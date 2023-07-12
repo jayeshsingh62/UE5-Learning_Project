@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS(Blueprintable)
+UCLASS()
 class LEARNINGPROJECT_API UCPP_Object : public UObject
 {
 	GENERATED_BODY()
