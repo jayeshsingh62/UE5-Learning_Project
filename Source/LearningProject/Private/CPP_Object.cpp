@@ -13,6 +13,7 @@ void UCPP_Object::SetMyPrivateInteger(UPARAM(ref)int& NewValue)
 	MyPrivateInteger = NewValue;
 }
 
-void UCPP_Object::Test(UPARAM(ref)FBook& Target)
+void UCPP_Object::Test(UPARAM(ref)FBook& Target, UObject* Context)
 {
+	UKismetSystemLibrary::PrintString(Context, "Test Function Called");
 }
