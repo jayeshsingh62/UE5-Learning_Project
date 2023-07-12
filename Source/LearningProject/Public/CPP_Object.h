@@ -18,7 +18,10 @@ private:
 	int MyPrivateInteger;
 
 public:
+	UPROPERTY(BlueprintReadWrite)
 	int MyPublicInteger;
+	UFUNCTION(BlueprintPure)
 	int GetMyPrivateInteger();
+	UFUNCTION(BlueprintCallable)
 	void SetMyPrivateInteger();
 };
