@@ -18,7 +18,7 @@ private:
 	int MyPrivateInteger;
 
 public:
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	int MyPublicInteger;
 	UFUNCTION(BlueprintPure)
 	int GetMyPrivateInteger();
