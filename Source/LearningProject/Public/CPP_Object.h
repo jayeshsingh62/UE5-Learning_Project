@@ -10,10 +10,16 @@
  * 
  */
 
+USTRUCT(BlueprintType)
 struct FBook
 {
+	GENERATED_USTRUCT_BODY()
+
+	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	FString Name;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	int NumberOfPages;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float Rating;
 };
 UCLASS(Blueprintable)
