@@ -8,7 +8,7 @@ int UCPP_Object::GetMyPrivateInteger()
 	return MyPrivateInteger;
 }
 
-void UCPP_Object::SetMyPrivateInteger()
+void UCPP_Object::SetMyPrivateInteger(int NewValue)
 {
-	
+	MyPrivateInteger = NewValue;
 }

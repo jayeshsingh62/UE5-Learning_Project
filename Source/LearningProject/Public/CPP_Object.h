@@ -23,5 +23,5 @@ public:
 	UFUNCTION(BlueprintPure)
 	int GetMyPrivateInteger();
 	UFUNCTION(BlueprintCallable)
-	void SetMyPrivateInteger();
+	void SetMyPrivateInteger(int NewValue);
 };
