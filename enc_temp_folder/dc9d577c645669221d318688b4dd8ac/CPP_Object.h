@@ -9,13 +9,6 @@
 /**
  * 
  */
-
-struct FBook
-{
-	FString Name;
-	int NumberOfPages;
-	float Rating;
-};
 UCLASS(Blueprintable)
 class LEARNINGPROJECT_API UCPP_Object : public UObject
 {
