@@ -37,4 +37,6 @@ public:
 	int GetMyPrivateInteger();
 	UFUNCTION(BlueprintCallable)
 	void SetMyPrivateInteger(UPARAM(ref)int& NewValue);
+	UFUNCTION(BlueprintCallable)
+		static void Test(UPARAM(ref)FBook& Target);
 };
