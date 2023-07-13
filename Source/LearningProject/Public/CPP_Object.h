@@ -16,9 +16,9 @@
 UENUM(BlueprintType)
 enum FruitList
 {
-	Apple,
-	Mango,
-	Banana
+	Apple UMETA(DisplayName = "Apple1"),
+	Mango UMETA(DisplayName = "Mango1"),
+	Banana UMETA(DisplayName = "Banana1")
 };
 
 USTRUCT(BlueprintType)
