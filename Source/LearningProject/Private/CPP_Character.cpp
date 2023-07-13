@@ -34,5 +34,6 @@ void ACPP_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void ACPP_Character::RemovePickup()
 {
+	auto temp = UGameplayStatics::GetPlayerCameraManager(this, 0);
+	temp->GetCameraLocation() + (temp->GetActorForwardVector() * 50000);
 }
-
