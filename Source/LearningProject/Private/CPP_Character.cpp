@@ -32,3 +32,7 @@ void ACPP_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
+void ACPP_Character::RemovePickup()
+{
+}
+
