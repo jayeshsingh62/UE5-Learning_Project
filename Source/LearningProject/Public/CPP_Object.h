@@ -12,6 +12,13 @@
  * 
  */
 
+
+UENUM(BlueprintType)
+enum FruitList
+{
+
+};
+
 USTRUCT(BlueprintType)
 struct FBook
 {
