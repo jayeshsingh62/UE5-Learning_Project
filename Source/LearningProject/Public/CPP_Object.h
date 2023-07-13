@@ -16,7 +16,9 @@
 UENUM(BlueprintType)
 enum FruitList
 {
-
+	Apple,
+	Mango,
+	Banana
 };
 
 USTRUCT(BlueprintType)
