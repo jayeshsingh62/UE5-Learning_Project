@@ -35,5 +35,9 @@ void ACPP_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 void ACPP_Character::RemovePickup()
 {
 	auto temp = UGameplayStatics::GetPlayerCameraManager(this, 0);
-	temp->GetCameraLocation() + (temp->GetActorForwardVector() * 50000);
+	auto CameraLocation = temp->GetCameraLocation();
+	auto End = CameraLocation + (temp->GetActorForwardVector() * 50000);
+	TArray<AActor*> Ignore;
+	FHitResult Hit;
+	UKismetSystemLibrary::LineTraceSingle(this, CameraLocation, End, ETraceTypeQuery::TraceTypeQuery1, 0, Ignore, EDrawDebugTrace::ForDuration, Hit, true);
 }
