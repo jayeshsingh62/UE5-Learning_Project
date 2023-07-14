@@ -8,7 +8,7 @@
 #include "CPP_Pickup.generated.h"
 
 UCLASS()
-class LEARNINGPROJECT_API ACPP_Pickup : public AActor, public IInterface
+class LEARNINGPROJECT_API ACPP_Pickup : public AActor, public IMyInterface
 {
 	GENERATED_BODY()
 	
