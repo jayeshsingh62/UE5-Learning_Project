@@ -40,10 +40,10 @@ void ACPP_Character::RemovePickup()
 	UKismetSystemLibrary::LineTraceSingle(this, temp->GetCameraLocation(), temp->GetCameraLocation() + (temp->GetActorForwardVector() * 50000), ETraceTypeQuery::TraceTypeQuery1, 0, Ignore, EDrawDebugTrace::ForDuration, Hit, true);
 	if (Hit.GetActor()) 
 	{
-		if (Cast<IMyInterface>(Hit.GetActor())) 
+		if (Cast<ACPP_Pickup>(Hit.GetActor())) 
 		{
-			auto TEMP = Cast<IMyInterface>(Hit.GetActor());
-			TEMP->Destruct();
+			Hit.GetActor()->Destroy();
+			UKismetSystemLibrary::PrintString(this, "Destroyed a Pickup");
 		}
 	}
 }
