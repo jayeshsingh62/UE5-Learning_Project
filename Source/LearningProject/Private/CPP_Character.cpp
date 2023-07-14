@@ -40,4 +40,12 @@ void ACPP_Character::RemovePickup()
 	TArray<AActor*> Ignore;
 	FHitResult Hit;
 	UKismetSystemLibrary::LineTraceSingle(this, CameraLocation, End, ETraceTypeQuery::TraceTypeQuery1, 0, Ignore, EDrawDebugTrace::ForDuration, Hit, true);
+	if (Hit.GetActor()) 
+	{
+		if (Cast<ACPP_Pickup>(Hit.GetActor())) 
+		{
+			Hit.GetActor()->Destroy();
+			UKismetSystemLibrary::PrintString(this, "Destroyed a Pickup");
+		}
+	}
 }
