@@ -25,3 +25,7 @@ void ACPP_InteractionActor::Tick(float DeltaTime)
 
 }
 
+void ACPP_InteractionActor::Destruct()
+{
+}
+
