@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MyInterface.h"
+#include "Kismet/KismetSystemLibrary.h"
 #include "CPP_InteractionActor.generated.h"
 
 UCLASS()
