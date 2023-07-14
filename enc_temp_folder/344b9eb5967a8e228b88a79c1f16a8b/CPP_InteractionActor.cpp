@@ -27,7 +27,5 @@ void ACPP_InteractionActor::Tick(float DeltaTime)
 
 void ACPP_InteractionActor::Destruct()
 {
-	UKismetSystemLibrary::PrintString(this, "Destroyed interaction actor from cpp");
-	Destroy();
 }
 
