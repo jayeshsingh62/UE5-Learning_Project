@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "CPP_Pickup.h"
 #include "CPP_Character.generated.h"
 
 UCLASS()
