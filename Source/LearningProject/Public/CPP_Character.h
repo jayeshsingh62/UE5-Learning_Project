@@ -41,5 +41,7 @@ public:
 		TArray<int> MyIntegerArray;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		TMap<FString, float> MyMap;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TSubclassOf<ACPP_InteractionActor> ActorToSpawn;
 
 };
