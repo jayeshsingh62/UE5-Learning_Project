@@ -38,5 +38,7 @@ public:
 	void TestBPNativeFunc_Implementation(float x);
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		TArray<int> MyIntegerArray;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		TMap<FString, float> MyMap;
 
 };
