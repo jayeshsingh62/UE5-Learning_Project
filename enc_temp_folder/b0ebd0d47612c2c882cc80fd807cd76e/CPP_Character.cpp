@@ -37,8 +37,6 @@ void ACPP_Character::BeginPlay()
 		temp.Append(" : ");
 		temp.Append(FString::SanitizeFloat(i.Value));
 		UKismetSystemLibrary::PrintString(this, temp);
-
-		GetWorld()->SpawnActor<ACPP_InteractionActor>();
 	}
 }
 
