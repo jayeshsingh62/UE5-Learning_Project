@@ -28,6 +28,11 @@ void ACPP_Character::Tick(float DeltaTime)
 	MyIntegerArray.Emplace(60);
 	MyIntegerArray.Remove(10);
 	MyIntegerArray.RemoveAt(0);
+
+	MyMap.Add("Pi", 3.14);
+	MyMap.Add("Num1", 12.34);
+	UKismetSystemLibrary::PrintString(this, FString::SanitizeFloat(MyMap["Num1"]));
+
 	for (auto& i : MyIntegerArray) 
 	{
 		UKismetSystemLibrary::PrintString(this, FString::FromInt(i));
