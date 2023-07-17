@@ -15,7 +15,7 @@ ACPP_InteractionActor::ACPP_InteractionActor()
 void ACPP_InteractionActor::BeginPlay()
 {
 	Super::BeginPlay();
-	UKismetSystemLibrary::PrintString(this, FString::FromInt(number));
+	
 }
 
 // Called every frame
