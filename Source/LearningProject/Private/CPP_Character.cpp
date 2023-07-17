@@ -31,20 +31,20 @@ void ACPP_Character::Tick(float DeltaTime)
 
 	MyMap.Add("Pi", 3.14);
 	MyMap.Add("Num1", 12.34);
-	UKismetSystemLibrary::PrintString(this, FString::SanitizeFloat(MyMap["Num1"]));
+	//UKismetSystemLibrary::PrintString(this, FString::SanitizeFloat(MyMap["Num1"]));
 
-	for (auto& i : MyIntegerArray) 
+	/*for (auto& i : MyIntegerArray)
 	{
 		UKismetSystemLibrary::PrintString(this, FString::FromInt(i));
-	}
+	}*/
 
-	for(auto& i: MyMap)
+	/*for (auto& i : MyMap)
 	{
 		FString temp = i.Key;
 		temp.Append(" : ");
 		temp.Append(FString::SanitizeFloat(i.Value));
 		UKismetSystemLibrary::PrintString(this, temp);
-	}
+	}*/
 }
 
 // Called to bind functionality to input
