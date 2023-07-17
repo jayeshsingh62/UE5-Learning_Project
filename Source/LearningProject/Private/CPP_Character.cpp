@@ -23,7 +23,10 @@ void ACPP_Character::BeginPlay()
 void ACPP_Character::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	MyIntegerArray.Add(50);
+	MyIntegerArray.Emplace(60);
+	MyIntegerArray.Remove(10);
+	MyIntegerArray.RemoveAt(0);
 }
 
 // Called to bind functionality to input
