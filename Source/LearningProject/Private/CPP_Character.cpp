@@ -28,6 +28,10 @@ void ACPP_Character::Tick(float DeltaTime)
 	MyIntegerArray.Emplace(60);
 	MyIntegerArray.Remove(10);
 	MyIntegerArray.RemoveAt(0);
+	for (auto& i : MyIntegerArray) 
+	{
+		UKismetSystemLibrary::PrintString(this, FString::FromInt(i));
+	}
 }
 
 // Called to bind functionality to input
