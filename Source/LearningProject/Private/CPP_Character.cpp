@@ -48,3 +48,7 @@ void ACPP_Character::RemovePickup()
 		}
 	}
 }
+
+void ACPP_Character::TestBPNativeFunc_Implementation(float x)
+{
+}

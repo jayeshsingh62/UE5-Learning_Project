@@ -35,5 +35,6 @@ public:
 		void TestBPFunc(int x);
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 		void TestBPNativeFunc(float x);
+	void TestBPNativeFunc_Implementation(float x);
 
 };
