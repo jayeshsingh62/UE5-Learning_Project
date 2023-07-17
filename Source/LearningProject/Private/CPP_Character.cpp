@@ -37,6 +37,14 @@ void ACPP_Character::Tick(float DeltaTime)
 	{
 		UKismetSystemLibrary::PrintString(this, FString::FromInt(i));
 	}
+
+	for(auto& i: MyMap)
+	{
+		FString temp = i.Key;
+		temp.Append(" : ");
+		temp.Append(FString::SanitizeFloat(i.Value));
+		UKismetSystemLibrary::PrintString(this, temp);
+	}
 }
 
 // Called to bind functionality to input
