@@ -42,6 +42,7 @@ void ACPP_Character::BeginPlay()
 		{
 			auto temp = GetWorld()->SpawnActor<ACPP_InteractionActor>(ActorToSpawn);
 			auto temp1 = GetWorld()->SpawnActorDeferred<ACPP_InteractionActor>(ActorToSpawn, FTransform());
+			temp1->number = 100;
 			temp1->FinishSpawning(FTransform());
 		}		
 	}
