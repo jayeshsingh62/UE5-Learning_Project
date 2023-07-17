@@ -36,5 +36,7 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 		void TestBPNativeFunc(float x);
 	void TestBPNativeFunc_Implementation(float x);
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		TArray<int> MyIntegerArray;
 
 };
