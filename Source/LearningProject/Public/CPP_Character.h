@@ -31,4 +31,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemovePickup();
 
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+		void TestBPFunc(int x);
+
 };
