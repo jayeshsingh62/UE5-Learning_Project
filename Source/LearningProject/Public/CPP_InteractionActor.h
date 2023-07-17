@@ -9,7 +9,7 @@
 #include "CPP_InteractionActor.generated.h"
 
 UCLASS()
-class LEARNINGPROJECT_API ACPP_InteractionActor : public AActor
+class LEARNINGPROJECT_API ACPP_InteractionActor : public AActor, public IMyInterface
 {
 	GENERATED_BODY()
 	
