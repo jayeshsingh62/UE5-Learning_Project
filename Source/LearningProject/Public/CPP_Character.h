@@ -43,5 +43,7 @@ public:
 		TMap<FString, float> MyMap;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TSubclassOf<ACPP_InteractionActor> ActorToSpawn;
+	UPROPERTY()
+		int number;
 
 };
