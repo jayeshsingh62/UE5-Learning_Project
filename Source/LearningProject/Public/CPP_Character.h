@@ -8,6 +8,7 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "CPP_Pickup.h"
 #include "CPP_InteractionActor.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "CPP_Character.generated.h"
 
 UCLASS()
@@ -41,7 +42,7 @@ public:
 		TArray<int> MyIntegerArray;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		TMap<FString, float> MyMap;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite)
 		TSubclassOf<ACPP_InteractionActor> ActorToSpawn;
 
 };
