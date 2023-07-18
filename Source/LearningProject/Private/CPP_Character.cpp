@@ -46,6 +46,9 @@ void ACPP_Character::BeginPlay()
 			temp1->FinishSpawning(FTransform());
 		}		
 	}
+
+	auto temp2 = GetCharacterMovement();
+	temp2->SetMovementMode(EMovementMode::MOVE_Flying, 0);
 }
 
 // Called every frame
